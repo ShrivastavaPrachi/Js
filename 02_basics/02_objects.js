@@ -1,5 +1,3 @@
-const { jsx } = require("react/jsx-runtime")
-
 //singleton
 Object.create //constructor method
 
@@ -15,7 +13,43 @@ const JsUser ={
     isLoggedIn: false,
     lastLoginDays: ["Monday","Saturday"]
 }
-console.log(JsUser.email)
-console.log(JsUser["email"])
-console.log(JsUser["full name"])
-console.log(typeof mysmbol);
+// console.log(JsUser.email)
+// console.log(JsUser["email"])
+// console.log(JsUser["full name"])
+// console.log(typeof mysmbol) //
+// console.log(JsUser[mysmbol])
+
+//Object.freeze(JsUser)// to freeze the changes
+//console.log(JsUser)
+
+
+JsUser.greeting = function(){
+   console.log(`Hello JS User, ${this.name}`);
+}
+
+//console.log(JsUser.greeting());//undefined
+
+
+//_________________objects_________________________________
+ //const tinderUser = new Object()
+ const tinderUser = { }
+ tinderUser.id="123abc"
+ tinderUser.name ="Sammy"
+ tinderUser.isLoggedIn = false
+ //console.log(tinderUser)
+
+ const regularUser ={
+    email : "some@gmail.com",
+    fullname : {
+        userfullname: {
+            firstname: "hitesh",
+            lastname: "chaudary"
+
+        }
+    }
+ }
+
+ //console.log(regularUser.fullname.userfullname)
+
+
+ 
