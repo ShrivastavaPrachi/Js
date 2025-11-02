@@ -52,4 +52,33 @@ JsUser.greeting = function(){
  //console.log(regularUser.fullname.userfullname)
 
 
- 
+ const obj1 = {1: "a" , 2: "b"}
+ const obj2 = {3: "a" , 4: "b"}
+ const obj3 = { 5: "a" , 6: "b"}
+
+ //const obj4 = {obj1,, obj2}
+ //const obj4 = Object.assign({}, obj1, obj2, obj3)
+//  console.log({...obj1, ...obj2, ...obj3})
+//  console.log(obj3);
+
+// console.log(Object.keys(tinderUser));// keys
+// console.log(Object.values(tinderUser))// values
+// console.log(Object.entries(tinderUser)) //both
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'))// check wether it has that or now
+
+
+
+
+//__________________________de structure___________________
+
+const course ={ 
+    coursename: "js  in hindi",
+    price: 999,
+    courseInstructor: "hitesh"
+}
+//course.courseInstructor// lengthy way
+ const{courseInstructor: instructure} =course
+ console.log(instructure)//  short and easy way
+   
+
+
