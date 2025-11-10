@@ -30,3 +30,18 @@ if(Object.keys(emptyObj).length===0){
 //false = ''//true
 //0==''//true
 
+// nullish coalescing operator (??) :null undefined
+
+let val1;
+//val1 = 5??10  //5
+//val1 = null?? 10 //10
+//val1= undefined ?? 15 //15
+val1 = null ?? 10 ??20 // gives 10 as its  first value
+//console.log(val1);
+
+
+
+//Terniary Operator
+// condition ? true :false
+const iceTea = 100
+iceTea >= 80 ? console.log("more") :console.log("less");
